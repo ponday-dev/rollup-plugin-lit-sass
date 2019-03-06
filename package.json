@@ -1,0 +1,29 @@
+{
+  "name": "@ponday/rollup-plugin-lit-sass",
+  "version": "1.0.0",
+  "description": "Rollup plugin to import sass as css template.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "jsnext:main": "dist/index.esm.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponday-dev/rollup-plugin-lit-sass.git"
+  },
+  "author": "ponday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ponday-dev/rollup-plugin-lit-sass/issues"
+  },
+  "homepage": "https://github.com/ponday-dev/rollup-plugin-lit-sass#readme",
+  "devDependencies": {
+    "rollup": "^1.4.1",
+    "rollup-plugin-buble": "^0.19.6"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "rollup-pluginutils": "^2.4.1"
+  }
+}
