@@ -1,11 +1,11 @@
-# @ponday/rollup-plugin-svg
+# @ponday/rollup-plugin-lit-sass
 
-Rollup plugin to import SVG files on JavaScript / TypeScript
+Rollup plugin to import '.sass' or '.scss' files on JavaScript / TypeScript
 
 ## Installation
 
 ```
-npm install --save-dev @ponday/rollup-plugin-svg
+npm install --save-dev @ponday/rollup-plugin-lit-sass
 ```
 
 ## Usage
@@ -13,26 +13,42 @@ npm install --save-dev @ponday/rollup-plugin-svg
 Import and add this plugin to `plugins` option.
 
 ```javascript
-import svg from '@ponday/rollup-plugin-svg';
+import litSass from '@ponday/rollup-plugin-lit-sass';
 
 export default {
   entry: 'src/input.js',
   dest: 'dist/output.js',
   plugins: [
-    svg()
+    litSass()
   ]
 };
 ```
 
-### Options
+Import sass file on JavaScript.
 
-You can use following options.
+```javascript
+import { LitElement, html, css} from 'lit-element';
+// import as a function that type is (params: { css: typeof require('lit-element').css }) => CSSResult
+import style from './styles.scss';
 
-#### format
+export class MyElement extends LitElement {
+  static styles = style({ css });
 
-value: `text` or `base64` (default: `text`)
+  // other implementations...
+}
+```
 
-Import format. SVG files will format to base64 before import if you specify `base64`.
+If you want to use TypeScript, you might need type declaraiton file for sass/scss.
+
+An example code for SCSS is following:
+
+```typescript
+declare module "*.scss" {
+  import { css, CSSResult } from 'lit-element';
+  const scss: (params: { css: typeof css}) => CSSResult;
+  export default scss;
+}
+```
 
 ## License
 
