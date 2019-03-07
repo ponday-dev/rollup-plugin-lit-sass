@@ -1,6 +1,6 @@
 # @ponday/rollup-plugin-lit-sass
 
-Rollup plugin to import '.sass' or '.scss' files on JavaScript / TypeScript
+Rollup plugin to import '.sass' or '.scss' files as LitElement css templates on JavaScript / TypeScript.
 
 ## Installation
 
