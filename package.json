@@ -12,6 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/ponday-dev/rollup-plugin-lit-sass.git"
   },
+  "files": [
+    "src",
+    "lib",
+    "README.md"
+  ],
   "author": "ponday",
   "license": "MIT",
   "bugs": {
