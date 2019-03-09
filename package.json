@@ -1,6 +1,6 @@
 {
   "name": "@ponday/rollup-plugin-lit-sass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rollup plugin to import sass as css template.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
