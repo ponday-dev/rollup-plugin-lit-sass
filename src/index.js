@@ -30,7 +30,7 @@ export default function litSass(options = {}) {
             }
 
             return {
-                code: template(code),
+                code: template(code, options),
                 map: { mappings: '' }
             };
         }
