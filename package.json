@@ -28,7 +28,7 @@
     "rollup-plugin-buble": "^0.19.6"
   },
   "dependencies": {
-    "node-sass": "^4.11.0",
-    "rollup-pluginutils": "^2.4.1"
+    "rollup-pluginutils": "^2.4.1",
+    "sass": "^1.38.1"
   }
 }
