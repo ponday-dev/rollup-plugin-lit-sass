@@ -1,6 +1,6 @@
 {
   "name": "@ponday/rollup-plugin-lit-sass",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Rollup plugin to import sass as css template.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
@@ -28,7 +28,7 @@
     "rollup-plugin-buble": "^0.19.6"
   },
   "dependencies": {
-    "node-sass": "^4.11.0",
-    "rollup-pluginutils": "^2.4.1"
+    "rollup-pluginutils": "^2.4.1",
+    "sass": "^1.38.1"
   }
 }

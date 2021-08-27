@@ -1,6 +1,6 @@
 import path from 'path';
 import { createFilter } from 'rollup-pluginutils';
-import sass from 'node-sass';
+import sass from 'sass';
 
 function template(code, options = {}) {
     const { css } = sass.renderSync({
